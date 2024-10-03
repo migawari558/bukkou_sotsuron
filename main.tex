@@ -1,6 +1,10 @@
 \documentclass[uplatex,dvipdfmx,a4paper,12pt,12ptj]{jsreport}
 \usepackage{lst} % 必要なパッケージと諸々のコマンド設定
 
+\usepackage[style=phys,articletitle=false,biblabel=brackets,chaptertitle=false,pageranges=false]{biblatex}
+
+\addbibresource{bib/refs.bib}
+
 \begin{document}
 
 % 表紙
@@ -20,7 +24,7 @@
 \vspace{30mm}
 {令和７年１月提出}\\
 \vspace{20mm}
-\hfill 〇〇大学〇〇学科 \\
+\hfill 東京大学物理工学科 \\
 \hfill 学籍番号　名前\\
 }
 \vspace{40mm}
@@ -30,14 +34,20 @@
 
 \tableofcontents
 
-%概要
+% 序論
 \include{01_abstruct.tex}
 
-\cite{yaoChargeTransferEffects2018}やばい。
+% 実験手法
+\include{02_method}
+
+
+
+\cite{yaoChargeTransferEffects2018}bibtex のバグを吐かないためのcitation.
 
 
 %参考文献
-\bibliographystyle{junsrt}
-\bibliography{bib/refs}
+% \bibliographystyle{junsrt}
+% \bibliography{bib/refs}
+\printbibliography
 
 \end{document}

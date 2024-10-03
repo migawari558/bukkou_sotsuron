@@ -1,8 +1,142 @@
-\begin{thebibliography}{1}
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
 
-\bibitem{yaoChargeTransferEffects2018}
-Q.~Yao, D.~W. Shen, C.~H.~P. Wen, C.~Q. Hua, L.~Q. Zhang, N.~Z. Wang, X.~H. Niu, Q.~Y. Chen, P.~Dudin, Y.~H. Lu, Y.~Zheng, X.~H. Chen, X.~G. Wan, and D.~L. Feng.
-\newblock Charge transfer effects in naturally occurring van der waals heterostructures $(\mathrm{PbSe}{)}_{1.16}({\mathrm{tise}}_{2}{)}_{m}$ ($m=1$, 2).
-\newblock Vol. 120, No.~10, p. 106401.
 
-\end{thebibliography}
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{yaoChargeTransferEffects2018}{article}{}{}
+      \name{author}{14}{}{%
+        {{hash=e66a9b9ffe34ff6df59c13d1f576254b}{%
+           family={Yao},
+           familyi={Y\bibinitperiod},
+           given={Q.},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=cafeddaf1c8ab776e7a9cc1cb624cef7}{%
+           family={Shen},
+           familyi={S\bibinitperiod},
+           given={D.\bibnamedelimi W.},
+           giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=c489bbcc43917843a13c2794cb46c075}{%
+           family={Wen},
+           familyi={W\bibinitperiod},
+           given={C.\bibnamedelimi H.\bibnamedelimi P.},
+           giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=a762c52b063884f15b5cb092300f8f7b}{%
+           family={Hua},
+           familyi={H\bibinitperiod},
+           given={C.\bibnamedelimi Q.},
+           giveni={C\bibinitperiod\bibinitdelim Q\bibinitperiod}}}%
+        {{hash=bb3f4c2db7b9bef15d75b733958d6c47}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={L.\bibnamedelimi Q.},
+           giveni={L\bibinitperiod\bibinitdelim Q\bibinitperiod}}}%
+        {{hash=00bfc2644dc91d309ea8abb710c7ebc5}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={N.\bibnamedelimi Z.},
+           giveni={N\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+        {{hash=b5daa04861856e905d1844cb13003ffd}{%
+           family={Niu},
+           familyi={N\bibinitperiod},
+           given={X.\bibnamedelimi H.},
+           giveni={X\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=c7dfad124c4fbbb3f75f9fb9e86d79d1}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Q.\bibnamedelimi Y.},
+           giveni={Q\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=ae62e9ecb32ff9719a3e7ff594df0f27}{%
+           family={Dudin},
+           familyi={D\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=48bac375597a1c73ad36f5b2a5b19080}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Y.\bibnamedelimi H.},
+           giveni={Y\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=ca5d8c01ece6364a02e9fe2849da33ed}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=5a0e5b3ae7179ea828a28733f6776b5d}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={X.\bibnamedelimi H.},
+           giveni={X\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=bd87a5a9be400fc9d1bcd2069332de06}{%
+           family={Wan},
+           familyi={W\bibinitperiod},
+           given={X.\bibnamedelimi G.},
+           giveni={X\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=33e265112cf3b26e72ea3d98b34484ae}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={D.\bibnamedelimi L.},
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{d69d923eee956ef24bd01c4a3ad5e00f}
+      \strng{fullhash}{e92c4dabd1a0a6b26942ff130caac781}
+      \strng{fullhashraw}{e92c4dabd1a0a6b26942ff130caac781}
+      \strng{bibnamehash}{e92c4dabd1a0a6b26942ff130caac781}
+      \strng{authorbibnamehash}{e92c4dabd1a0a6b26942ff130caac781}
+      \strng{authornamehash}{d69d923eee956ef24bd01c4a3ad5e00f}
+      \strng{authorfullhash}{e92c4dabd1a0a6b26942ff130caac781}
+      \strng{authorfullhashraw}{e92c4dabd1a0a6b26942ff130caac781}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{van der Waals heterostructures (VDWHs) exhibit rich properties and thus has potential for applications, and charge transfer between different layers in a heterostructure often dominates its properties and device performance. It is thus critical to reveal and understand the charge transfer effects in VDWHs, for which electronic structure measurements have proven to be effective. Using angle-resolved photoemission spectroscopy, we studied the electronic structures of (PbSe)1.16⁢(TiSe2)𝑚 (𝑚=1, 2), which are naturally occurring VDWHs, and discovered several striking charge transfer effects. When the thickness of the TiSe2 layers is halved from 𝑚=2 to 𝑚=1, the amount of charge transferred increases unexpectedly by more than 250\%. This is accompanied by a dramatic drop in the electron-phonon interaction strength far beyond the prediction by first-principles calculations and, consequently, superconductivity only exists in the 𝑚=2 compound with strong electron-phonon interaction, albeit with lower carrier density. Furthermore, we found that the amount of charge transferred in both compounds is nearly halved when warmed from below 10 K to room temperature, due to the different thermal expansion coefficients of the constituent layers of these misfit compounds. These unprecedentedly large charge transfer effects might widely exist in VDWHs composed of metal-semiconductor contacts; thus, our results provide important insights for further understanding and applications of VDWHs.}
+      \field{day}{7}
+      \field{journaltitle}{Physical Review Letters}
+      \field{month}{3}
+      \field{number}{10}
+      \field{shortjournal}{Phys. Rev. Lett.}
+      \field{title}{Charge Transfer Effects in Naturally Occurring van der Waals Heterostructures $(\mathrm{PbSe}{)}_{1.16}({\mathrm{TiSe}}_{2}{)}_{m}$ ($m=1$, 2)}
+      \field{urlday}{19}
+      \field{urlmonth}{9}
+      \field{urlyear}{2024}
+      \field{volume}{120}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{106401}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.120.106401
+      \endverb
+      \verb{file}
+      \verb G\:\\マイドライブ\\lab\\zotero\\Yao et al_2018_Charge Transfer Effects in Naturally Occurring van der Waals Heterostructures.pdf;G\:\\マイドライブ\\lab\\翻訳後論文\\(PbSe)(TiSe2)ドープ量のやつ.pdf;G\:\\マイドライブ\\lab\\翻訳後論文\\misfit_dope_supliment.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.120.106401
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevLett.120.106401
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
