@@ -52,7 +52,7 @@ Overleafなどに対して使用する場合は、このリポジトリ内にあ
     },
     "editor.stickyScroll.enabled": true,
   },
-    "latex-workshop.latex.recipe.default": "uplatex and dvipdfmx",
+    "latex-workshop.latex.recipe.default": "with biber",
     "latex-workshop.latex.clean.enabled": true,
     "latex-workshop.latex.clean.fileTypes": [
   "*.aux",
@@ -77,13 +77,16 @@ Overleafなどに対して使用する場合は、このリポジトリ内にあ
   "*.dvi",
   "*.synctex.gz"
 ],
-    "latex-workshop.latex.recipes": [
+       "latex-workshop.latex.recipes": [
       {
-        "name": "platex and dvipdfmx",
-        "tools": ["platex", "platex", "dvipdfmx"]
+        "name": "without bib",
+        "tools": ["uplatex", "uplatex", "dvipdfmx"]
       }, {
-        "name": "uplatex and dvipdfmx",
-        "tools": ["uplatex","pbibtex","uplatex","uplatex","dvipdfmx"]
+        "name": "with bib",
+        "tools": ["uplatex","pbibtex","uplatex","uplatex", "dvipdfmx"]
+      },{
+        "name": "with biber",
+        "tools": ["uplatex","biber","uplatex","uplatex", "dvipdfmx"]
       }
     ],
     "latex-workshop.latex.tools": [
@@ -116,8 +119,17 @@ Overleafなどに対して使用する場合は、このリポジトリ内にあ
         "name": "dvipdfmx",
         "command": "dvipdfmx",
         "args": ["%DOCFILE%.dvi"]
+      },
+
+      {
+        "name": "biber",
+        "command": "biber",
+        "args": [
+          "%DOCFILE%"
+      ]
       }
     ],
+
 ```
 設定としては、
 - 余分なファイルをコンパイル時に削除する
