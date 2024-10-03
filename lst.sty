@@ -1,0 +1,166 @@
+\usepackage{docmute}
+\usepackage{mathtools}
+\usepackage[utf8]{inputenc}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{here}
+\usepackage{amsmath,amsfonts,latexsym}
+\usepackage{amssymb}
+\usepackage{ascmac}
+\usepackage{verbatim}
+\usepackage{tikz}
+\usepackage{bm}
+\usepackage{color}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage[T1]{fontenc}
+\usepackage[explicit]{titlesec}
+\usepackage{multicol}
+\usepackage{tcolorbox}
+\usepackage{xcolor}
+\usepackage{framed}
+\usepackage{siunitx}
+\usepackage{physics}
+\usepackage{footnote}
+\usepackage{xhfill}
+\usepackage{url}
+\usepackage{pdfpages}
+\usepackage{hyperref}
+\usepackage{pxjahyper}
+\usepackage{tabularx}
+% \usepackage{biblatex}
+
+% 数式(演算子など)のスペースを詰める
+% =,→ 間の余白
+%\thickmuskip=1.0\thickmuskip
+% +,- 間の余白
+%\medmuskip=0.8\medmuskip
+% … などの装飾記号の余白
+%\thinmuskip=0.8\thinmuskip
+% 行列を詰める
+\arraycolsep=0.3\arraycolsep
+%leftbar細めの環境の設定
+\newenvironment{myleftbar}{%
+    \def\FrameCommand{\vrule width 1pt \hspace{10pt}}% 
+    \MakeFramed {\advance\hsize-\width \FrameRestore}}%
+    {\endMakeFramed}
+    
+%解答用環境の設定
+\newenvironment{解答}{%
+    \\\xrfill{1pt}【解答】\xrfill{1pt}\\}%
+    {\\\xrfill{1pt}}
+%場合分け環境の設定
+\newenvironment{場合分け}{%
+\vspace{-0.5\baselineskip}
+
+    \begin{enumerate}[label = \ajKakkoroman{\arabic*},leftmargin=0pt]
+    }%
+    {%
+    \end{enumerate}
+    }%
+    
+%改行コマンド設定
+\newcommand{\br}[1]{~\vspace{#1 zw}\vspace{-1zw}\\}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newenvironment{g}[6]{\begin{tikzpicture}
+\draw[->,>=stealth,semithick] (#1,0)--(#2,0)node[above]{$#5$}; %x軸
+\draw[->,>=stealth,semithick](0,#3)--(0,#4)node[right]{$#6$}; %y軸
+\draw (0,0)node[below left]{O}; %原点
+}
+{\end{tikzpicture}}
+
+\newenvironment{s}[4]{
+    \begin{scope}
+    \clip (#1,#2) rectangle (#3,#4);
+}
+{
+    \end{scope}
+}
+
+\newcommand{\f}[3]{
+    \draw[very thick,samples=400,domain=#2:#3] plot({\x},{#1});
+}
+
+\newcommand{\pf}[4]{
+    \draw[very thick,samples=400,domain=#3:#4,variable=\t] plot({#1},{#2});
+}
+
+\newcommand{\plot}[4]{
+    \draw[dashed] (0,#2)node[left]{$#4$}--(#1,#2)--(#1,0)node[below]{$#3$}; 
+    }
+    
+    \newcommand{\xplot}[2]{\draw (#1,0)node[below]{$#2$};}
+    \newcommand{\yplot}[2]{\draw (0,#1)node[left]{$#2$};}
+    \newcommand{\name}[4]{\draw (#1,#2)node[#3]{$#4$};}
+
+    \newcommand{\maru}[1]{\textcircled{\scriptsize #1}}
+    \newcommand{\mmaru}[1]{\qquad\cdots\cdots\text{\maru{#1}}}
+
+\newcommand{\img}[3]{
+    \begin{figure}[H]
+        \centering
+        \includegraphics[height=#3]{#1}
+        \caption{#2}
+    \end{figure}
+}
+
+\newcommand{\wimg}[5]{
+\begin{figure}[H]
+    \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[height=#5]{#1}
+    \caption{#3}
+    \end{minipage}
+    \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[height=#5]{#2}
+    \caption{#4}
+    \end{minipage}
+\end{figure}
+}
+
+\newcommand{\tit}[2]{
+    \begin{leftbar}
+        \noindent  {\huge #1} \vspace{0.5zw}\\
+    {\large #2}   
+    \end{leftbar}
+}
+\def\ctit#1#2{%
+\begin{center}
+{\huge \太字{#1}}\vspace{0.5zw}\\
+{\large \gt{#2}}
+\end{center}
+}
+
+\def\太字#1{{\bfseries \gt{#1}}}
+\def\強調#1{\uline{\bf{\gt{#1}}}}
+\def\与式{\text{(与式)}}
+
+
+\def\bun{\displaystyle\frac}
+\newcommand{\etal}{\textit{et al}. }
+\def\const{\textit{const}.}
+\newcommand{\ie}{\textit{i}.\textit{e}.,\quad }
+\newcommand{\eg}{\textit{e}.\textit{g}. }
+\def\const{\textit{const}.}
+\newcommand{\with}[1]{{\qquad ^{\mathrm{w}/} #1}}
+\newcommand{\mathif}[1]{{\qquad \mathrm{if} \quad #1}}
+\newcommand{\goto}[2]{\,\xrightarrow{#1 \to #2}\,}
+\newcommand{\limit}[2]{\lim_{#1 \rightarrow #2}}
+\newcommand{\answer}[1]{%
+\mbox{$\displaystyle#1$}_{\,\textbf{\slash}\hspace{-0.3zw}\textbf{\slash}}}
+\newcommand{\avec}[1]{\overrightarrow{\mathrm{#1}}}
+\newcommand{\evec}[1]{\frac{\vb*{#1}}{\norm{\vb*{#1}}}}
+\def\sfuline#1{{\sffamily\uline{#1}}}
+\def\T{\mathsf{T}}
+\def\inR{\in\mathbb{R}}
+\def\inQ{\in\mathbb{Q}}
+\def\inZ{\in\mathbb{Z}}
+\def\inC{\in\mathbb{C}}
+\def\tani#1{[\mathrm{#1}]}
+\def\sankaku{\noindent ▷　}
+\def\tritit#1{\noindent\強調{▶#1}}
+\def\lra{\Leftrightarrow　}
+\def\ddel#1{\partial_{#1}}
+\def\qed{\smash{\scalebox{0.75}[1.5]{$\blacksquare$}}}
+\newcommand{\mf}[1]{$\mathrm{#1}$}
