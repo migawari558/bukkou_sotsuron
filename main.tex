@@ -48,6 +48,10 @@
 %参考文献
 % \bibliographystyle{junsrt}
 % \bibliography{bib/refs}
-\printbibliography
+\newpage
+\renewcommand\refname{参考文献}
+\defbibheading{bunken}[\refname]{\section*{#1}}
+%\addcontentsline{toc}{section}{\refname}
+\printbibliography[heading=bunken]
 
 \end{document}
