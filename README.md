@@ -83,7 +83,7 @@ Overleafなどに対して使用する場合は、このリポジトリ内にあ
         "tools": ["platex", "platex", "dvipdfmx"]
       }, {
         "name": "uplatex and dvipdfmx",
-        "tools": ["uplatex","pbibtex","uplatex", "dvipdfmx"]
+        "tools": ["uplatex","pbibtex","uplatex","uplatex","dvipdfmx"]
       }
     ],
     "latex-workshop.latex.tools": [
